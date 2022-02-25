@@ -23,7 +23,6 @@ var LinkedList = function () {
 
     var currHeadVal = list.head.value;
     var nextNode = list.head.next;
-    console.log(list.head, nextNode);
 
     if (!nextNode) {
       list.head = null;
@@ -65,3 +64,7 @@ var Node = function (value) {
 /*
  * Complexity: What is the time complexity of the above functions?
  */
+
+//addToTail - constant O(1)
+//removeHead - constant O(1)
+//contains - linear O(n)
